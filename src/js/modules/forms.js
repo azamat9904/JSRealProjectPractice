@@ -35,7 +35,6 @@ const forms = () =>{
             const formData = new FormData(item);
             postData('assets/server.php',formData)
                 .then(result =>{
-                console.log(res);
                 statusMessage.textContent = message.success;
             }).catch(error =>{
                 statusMessage.textContent = message.failure;
